@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function show(ans)
+		{
+document.getElementById("res").innerHTML=ans;
+document.getElementById("t1").value=ans;
+		}
+		function dis(v) {
+document.getElementById("res").innerHTML="mouse "+v;			
+		}
+
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" onfocus="show('in')" onblur="show('out')">
+
+	<button onmouseover="dis('in')" onmouseout="dis('out')">click me</button>
+	<div id="res"></div>
+
+</body>
+</html>
